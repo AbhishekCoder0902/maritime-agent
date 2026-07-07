@@ -1,6 +1,8 @@
 name: Weekly Maritime Intelligence Brief
 
 on:
+  push:
+    branches: [ "main", "master" ]
   schedule:
     # Runs at 02:30 UTC every Monday (08:00 IST)
     - cron: '30 2 * * 1'
